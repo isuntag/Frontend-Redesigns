@@ -1,0 +1,12 @@
+{
+  "name": "sovera",
+  "version": "1.0.0",
+  "description": "Redesign of the SoVerA website.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch sass/app.scss:css/app.css"
+  },
+  "author": "Isaac Suntag <isuntag@gmail.com> (isaacsuntag.com)",
+  "license": "ISC",
+  "dependencies": {}
+}
