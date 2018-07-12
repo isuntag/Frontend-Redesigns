@@ -5,13 +5,6 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.hamburger {
-  position: fixed;
-  top: 0px;
-  left: 20px;
-  color: black;
-  font-size: 90pt; }
-
 header {
   padding: 60px 0;
   text-align: center;
@@ -20,73 +13,112 @@ header {
   background-attachment: fixed;
   background-size: cover; }
   header h1 {
-    font-size: 120pt;
+    font-size: 120px;
     font-weight: 200;
     margin: 0; }
   header h2 {
-    font-size: 30pt;
+    font-size: 30px;
     font-weight: 100;
     margin: 0 0 60px 0; }
+  header span {
+    color: darkgrey; }
 
 nav {
+  z-index: 1000;
   width: 100%;
   margin: 0 auto;
   padding: 0 10%;
-  background-color: dimgray;
-  display: flex; }
+  background-color: #504f5b;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center; }
   nav ul {
     display: flex;
-    align-items: stretch;
-    vertical-align: middle;
+    flex-wrap: wrap;
     margin: 0 10px 0 0;
     padding: 0;
-    list-style-type: none; }
+    list-style-type: none;
+    flex-grow: 9; }
   nav li {
     display: inline-block;
     color: white;
-    background-color: dimgray;
     padding: 0 15px;
-    height: 50px;
+    min-height: 50px;
     line-height: 50px;
-    margin-right: 0;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-transform: uppercase;
     -webkit-transition: background-color 0.6s ease-out;
     transition: background-color 0.6s ease-out; }
   nav li:hover {
     background-color: lightgray; }
   nav input[type=text] {
-    position: relative;
-    top: 10px;
+    flex-grow: 1;
     height: 30px;
     width: 130px;
+    min-width: 130px;
+    font-weight: 100;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-radius: 10px;
-    padding: 5px; }
+    padding: 5px;
+    outline: none;
+    margin: 10px 0; }
   nav input[type=text]:focus {
-    width: 40%; }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0; }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + main {
-  padding-top: 70px; }
+    width: 30%; }
 
 main {
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
-  text-align: center;
-  background-color: white; }
-  main img {
-    max-width: 45%;
-    height: auto;
-    max-height: 300px; }
-  main div {
-    padding: 0 10px;
-    width: 300px;
-    min-height: 200px; }
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  main section {
+    align-items: stretch;
+    width: 48%;
+    min-width: 450px;
+    flex-grow: 1;
+    align-self: flex-start;
+    margin: 1%;
+    text-align: center; }
+  main section:first-child {
+    width: 100%; }
+  main h3 {
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -30px; }
+
+.small {
+  min-width: 250px;
+  width: 40%;
+  max-width: 380px;
+  height: auto;
+  max-height: 300px;
+  margin: 10px; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  min-height: 250px;
+  width: 100%;
+  position: relative;
+  border-left: 40px solid #504f5b;
+  padding: 15px;
+  display: inline-block; }
+
+.sticky {
+  position: fixed;
+  top: 0; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,2 +1,2 @@
 # Redesign of SoVerA's website
-(https://sovera.org/ "SoVerA's current website")
+[SoVerA's website](https://sovera.org/)

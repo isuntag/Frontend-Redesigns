@@ -5,45 +5,67 @@
     <title>SoVerA Redesign</title>
     <link rel="stylesheet" href="css/sanitize.css">
     <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+
+    </script>
   </head>
   <body>
     <div class="container">
-      <div class="hamburger">
-        =
-      </div>
       <header>
         <h1>SoVerA</h1>
         <h2>Southern Vermont Astronomy Group</h2>
-        <p>Next meeting: Tuesday, July 10 at 7pm</p>
+        <p>Next meeting: 7pm Tuesday, July 10</p>
         <p>Whiting Library, Chester, Vermont</p>
-        <p>Directions</p>
+        <p><span>Directions</span></p>
       </header>
-      <nav id="navbar">
+      <nav class="navbar">
         <ul>
           <li>Education</li>
           <li>In the Sky</li>
           <li>Members Page</li>
-          <li>Link IV</li>
         </ul>
         <input type="text" name="search" placeholder="Search...">
       </nav>
       <main>
-        <h3>Member Astrophotos</h3>
-        <img src="https://sovera.org/wp-content/uploads/2012/12/mooned5.jpg" alt="November Moon">
-        <img src="https://sovera.org/wp-content/uploads/2012/12/IC405.gif" alt="Flaming Star Nebula">
-        <h3>Events</h3>
-        <div>
-          EVENTS HERE
-        </div>
-        <div>
-          EVENTS HERE
-        </div>
-        <div>
-          EVENTS HERE
-        </div>
-        <div>
-          EVENTS HERE
-        </div>
+        <section>
+          <div class="wrapper">
+            <h3>Member Astrophotos</h3>
+            <img class="small" src="https://sovera.org/wp-content/uploads/2012/12/mooned5.jpg" alt="November Moon">
+            <img class="small" src="https://sovera.org/wp-content/uploads/2012/12/IC405.gif" alt="Flaming Star Nebula">
+          </div>
+        </section>
+        <section>
+          <div class="wrapper">
+            <h3>Sky Chart</h3>
+            <img src="https://sovera.org/var/sc1-large.png" alt="Sky Chart">
+          </div>
+        </section>
+        <section>
+          <div class="wrapper">
+            <h3>Weather</h3>
+            <img src="https://sovera.org/var/w1-large.png" alt="Londonderry, VT Weather"><br>
+            <img src="https://sovera.org/var/w2-large.png" alt="Chester, VT Weather"><br>
+            <img src="https://sovera.org/var/w3-large.png" alt="Grafton, VT Weather">
+          </div>
+        </section>
+        <section>
+          <div class="wrapper">
+            <h3>Events</h3>
+            EVENTS HERE
+          </div>
+        </section>
+        <section>
+          <div class="wrapper">
+            <h3>Events</h3>
+            EVENTS HERE
+          </div>
+        </section>
+        <section>
+          <div class="wrapper">
+            <h3>Events</h3>
+            EVENTS HERE
+          </div>
+        </section>
       </main>
     </div>
     <script type="text/javascript" src="app.js"></script>
